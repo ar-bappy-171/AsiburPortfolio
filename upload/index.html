@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#070a12" />
+  <meta name="description" content="Asibur Rahman Bappy" />
+  <title>Asibur Rahman Bappy — EEE Engineer</title>
+  <link rel="preload" as="image" href="assets/media/profile.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg-video" aria-hidden="true">
+    <video id="bgVideo" autoplay muted loop playsinline preload="auto" poster="assets/media/bg-poster.jpg">
+      <source src="assets/media/bg.webm" type="video/webm"/>
+      <source src="assets/media/bg.mp4" type="video/mp4"/>
+    </video>
+    <div class="bg-tint"></div>
+  </div>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+
+  <!-- Fixed top nav -->
+  <nav class="top-nav" role="navigation" aria-label="Primary" id="topNav">
+    <div class="nav-inner">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><span>Asibur Rahman Bappy</span></div>
+
+      <div class="navlinks" id="navlinks">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#reference">Reference</a>
+        <a href="#contact">Contact</a>
+        <span class="nav-indicator" id="navIndicator"></span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="actions">
+        <a class="icon-btn" href="https://www.linkedin.com/in/md-asibur-rahman-13a38637a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="icon-btn" href="https://www.facebook.com/md.bappi.397948/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <i id="themeIcon" class="fas fa-sun"></i>
+          Theme
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-spacer" aria-hidden="true"></div>
+
+  <!-- Mobile FAB -->
+  <button class="mobile-fab" id="mobileFab" aria-label="Quick menu" aria-expanded="false" aria-controls="fabPanel">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="fab-panel" id="fabPanel">
+    <div class="fab-links">
+      <a href="#home">Home</a>
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#reference">Reference</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+
+  <!-- Cursor, toast, back-to-top -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <header id="home">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-copy" data-parallax="0.04">
+          <span class="eyebrow reveal" data-aos="fade-up">"Knowledge is Power." - Francis Bacon"</span>
+          <h1 class="title reveal" data-aos="fade-up" data-aos-delay="100">
+            <span class="name">Asibur Rahman Bappy</span>            
+          </h1>
+          <h2 class="typing" data-aos="fade-up" data-aos-delay="200"><span id="typing"></span></h2>
+          <p class="lead reveal" data-aos="fade-up" data-aos-delay="300">I am passionate about pursuing opportunities that expand my expertise and drive professional excellence. With a curious, proactive mindset, I am committed to continuous growth and innovation in both personal and professional realms. I thrive in collaborative environments where I can contribute meaningfully, sharpen my skills, and make a tangible impact.</p>
+          <div class="cta-row reveal" data-aos="fade-up" data-aos-delay="400">
+            <a class="btn" href="assets/media/Bappy_CV.pdf" download>
+            <i class="fas fa-file-pdf"></i> Download Resume</a>
+            <a class="btn primary" href="#contact">
+            <i class="fa-regular fa-paper-plane"></i> Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-parallax="0.08" data-aos="fade-left" data-aos-delay="200">
+          <img class="avatar" src="assets/media/profile.jpg" alt="Portrait photo" loading="eager" decoding="async" fetchpriority="high"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="profile">
+      <div class="container">
+        <h2 class="section-title reveal center" data-aos="fade-down">Profile</h2>
+        <div class="panel reveal" data-aos="fade-up">
+          <p class="muted">I am a dedicated Electrical and Electronic (EEE) Engineer with hands-on experience in VLSI design, embedded systems, digital circuits, and automation projects. I design and implement hardware and software solutions, from transistor-level circuits to microcontroller-based systems. I thrive on solving complex engineering problems, optimizing designs for performance and efficiency, and collaborating in multidisciplinary teams to deliver practical and innovative solutions. My work focuses on bringing research and practical applications together, ensuring projects are reliable, efficient, and aligned with modern technological standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title reveal center" data-aos="fade-down">Experience</h2>
+        <p class="section-sub reveal center" data-aos="fade-up">Slowly Growing for The World</p>
+        
+         <div class="timeline panel reveal">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">IC Mask Design Training — ULKASEMI</div>
+              <div class="small">Duration: 01 Sep - 08 Sep (2025)</div>
+              <ul class="clean muted">
+                <li>Gained hands-on experience with Cadence Virtuoso using 14nm technology for circuit layout design and verification.</li>
+                <li>Learned about advanced layers in short-channel technology and applied DRC and LVS checks for validation.</li>
+                <li>Achieved 2nd position out of 13 participants in the final assessment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline panel reveal">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Science And Commerce Coaching Center, Mirpur, Dhaka</div>
+              <div class="small">Promoted: Jan(2024) — Present</div>
+              <ul class="clean muted">
+                <li>Promoted to Senior Tutor, leading curriculum planning and advanced classes.</li>
+                <li>Mentor junior tutors and guide students to improve problem-solving skills.</li>
+                <li>Organize workshops and track student progress for academic success.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Science And Commerce Coaching Center, Mirpur, Dhaka</div>
+              <div class="small">Joined: Oct(2021) - Dec(2023)</div>
+              <ul class="clean muted">
+                <li>Teach Physics and Mathematics to HSC candidates.</li>
+                <li>Help students solve problems effectively and understand concepts deeply.</li>
+                <li>Prepare them for academic success and future challenges.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <article class="card tilt reveal">
+            <div class="badge">COMPETENCIES</div>
+            <ul class="clean muted">
+              <li>Analytical problem solving</li>
+              <li>Clear documentation and collaboration</li>
+              <li>Communication and teamwork skills</li>
+              <li>Problem Solving and Decision making</li>
+              <li>Multitasking, Adaptivity</li>
+              <li>Knowledge sharing, Time Management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title reveal center" data-aos="fade-down">Technical Skills</h2>
+        <p class="section-sub reveal center" data-aos="fade-up">Design tools, programming, and platforms I work with.</p>
+        <div class="grid3">
+          <article class="card tilt reveal">
+            <div class="badge">Software & EDA</div>
+            <ul class="clean muted">
+              <li>Cadence Virtuoso</li>
+              <li>PSpice, Proteus, Quartus, </li>
+              <li>AutoCAD, FreeCad</li>
+              <li>Code::Blocks, MATLAB, Arduino</li>
+              <li>PowerWorld Simulator (Student version)</li>
+              <li>CST Studio, Siemens</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Programming & OS</div>
+            <ul class="clean muted">
+              <li>C, C++, Python</li>
+              <li>MATLAB, Varilog, PLC Basic</li>
+              <li>Windows, Linux (Bash)</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Language Proficiency</div>
+            <ul class="clean muted">
+              <li>Bangla</li>
+              <li>English</li>
+              <li>Deutsch (Geman Language) - A2</li>
+              <li>Japanese A1</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Specialized Courses</div>
+            <ul class="clean muted">
+              <li>VLSI 1, Fabrication and Processing</li>
+              <li>Electronics 1, Electronics 2</li>
+              <li>Power System 1, Power System 2</li>
+              <li>Digital Electronics, Digital Signal Processing</li>
+              <li>Computer Architecture, OptoElectronics</li>
+              <li>BioMedical, OptoElectronics</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title reveal center">Project Experience</h2>
+        <p class="section-sub reveal center">Hands-on experience on various project.</p>
+        <div class="grid3">
+          <article class="card tilt reveal">
+            <div class="badge">Vibration Meter using IC LM3915</div>
+            <ul class="clean muted">
+               <li>Displays vibration strength on a 10-LED bar graph, lighting more LEDs as vibration increases.</li>
+               <li>Uses a sensor to convert vibrations into voltage signals for display.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">App Design Project using MATLAB</div>
+            <ul class="clean muted">
+               <li>Created interactive GUIs with MATLAB App Designer.</li>
+               <li>Combined visual components and MATLAB code for user-friendly applications.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Wireless RC Car Control with GPS Tracker</div>
+            <ul class="clean muted">
+               <li>Remote control of RC car via wireless signals.</li>
+               <li>Tracks location in real-time using GPS for monitoring mobility.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Full Adder using MOSFET Combinations</div>
+            <ul class="clean muted">
+               <li>Implemented a full adder using different MOSFET transistor configurations.</li>
+               <li>Optimized power, delay, and area with various transistor-level logic styles.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Solar Energy-Based Inverter Design</div>
+            <ul class="clean muted">
+               <li>Converts DC from solar panels to AC electricity for appliances or grid use.</li>
+               <li>Ensures efficient and eco-friendly energy conversion.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">10T SRAM Cell Implementation in Cadence</div>
+            <ul class="clean muted">
+               <li>Designed and simulated a 10-transistor SRAM cell using Cadence based on research papers.</li>
+               <li>Focused on improving memory stability and reducing power consumption.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Microcontroller Controlled Adaptive DC Charger</div>
+            <ul class="clean muted">
+               <li>Used a microcontroller to regulate DC output for battery charging.</li>
+               <li>Adapted charging parameters for different battery types ensuring efficiency and safety.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Traffic Light Automation with Microcontroller</div>
+            <ul class="clean muted">
+                <li>Implemented traffic light control using a microcontroller with timers and sensors.</li>
+                <li>Sensors provide feedback to the microcontroller to manage traffic flow efficiently.</li>
+                <li>Traffic lights give proper signals based on real-time traffic conditions.</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal">
+            <div class="badge">Smart Image Enhancement & Wireless Transmission</div>
+            <ul class="clean muted">
+              <li>Captured images from users and improved quality using noise reduction techniques.</li>
+              <li>Transmitted images wirelessly for real-time analysis and display.</li>
+            <li>Focused on research-driven enhancement to preserve details and reduce artifacts.</li>
+           </ul> 
+         </article>
+         <article class="card tilt reveal">
+            <div class="badge">Surface Plasmon Resonance Numerical Analysis</div>
+            <ul class="clean muted">
+              <li>Built code to generate essential SPR parameters using the Transfer Matrix Method (TMM).</li>
+              <li>Implemented Kretschmann configuration rules for accurate simulation.</li>
+              <li>Designed for precise and comprehensive analysis of plasmonic behavior.</li>
+           </ul> 
+         </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title reveal center">Education</h2>
+        <p class="section-sub reveal center">Academic foundation</p>
+        <div class="timeline panel reveal">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Ahsanullah University of Science & Technology (AUST) — 2024</div>
+              <div class="small">Bachelor of Science in Electrical & Electronic Engineering</div>
+              <ul class="clean muted">
+                <li>Conference : Design and Performance Analysis of a Highly Sensitivity SPR Biosensor for Water Pollution Detection.</li>
+                <li>Jornal : Design and Numerical Analysis of a Highly Sensitive SPR Biosensor for Detecting Contaminants in Water.</li>
+                <li>CGPA: 3.2 out of 4.00</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Government Science College, Dhaka — 2019</div>
+              <div class="small">Higher Secondary Certificate</div>
+              <ul class="clean muted"><li>GPA: 5.00 out of 5.00</li></ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Government Laboratory High School, Dhaka — 2017</div>
+              <div class="small">Secondary School Certificate</div>
+              <ul class="clean muted"><li>GPA: 5.00 out of 5.00</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="reference">
+      <div class="container">
+        <h2 class="section-title reveal center">Reference</h2>
+        <div class="timeline panel reveal">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Khandakar Md. Ishtiak</div>
+              <div class="small">Assistant Professor</div>
+              <div class="small">Department of EEE (AUST)</div>
+              <ul class="clean muted"><li>Email : ishtiak.eee@aust.edu</li></ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Dr. Bobby Barua</div>
+              <div class="small">Professor</div>
+              <div class="small">Department of EEE (AUST)</div>
+              <ul class="clean muted"><li>Email : bobby@aust.edu</li></ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-title">Sabbir Hossain</div>
+              <div class="small">Director</div>
+              <div class="small">Science and Commerce Coaching Center, Dhaka</div>
+              <ul class="clean muted"><li>Email : sciencecommercecoaching@gmail.com</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal center">Contact</h2>
+      <p class="section-sub reveal center">Let’s build a better future together.</p>
+
+      <div class="container cols">
+        <!-- Left Column -->
+        <div class="col">
+          <h3 class="title">Contact</h3>
+          <ul class="contact__list">
+            <li><i class="fas fa-phone"></i> 
+              <a href="tel:+8801853265996">+8801853265996</a>
+            </li>
+            <li><i class="fas fa-envelope"></i> 
+              <a href="mailto:asibur.eee.171@gmail.com">asibur.eee.171@gmail.com</a>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i> House: 409/11A, SP Road, South Paikpara, Kallyanpur, Dhaka, Bangladesh</li>
+          </ul>
+          <p>Follow Me</p>
+          <div class="list-inline social-links">
+            <a href="https://www.facebook.com/md.bappi.397948/" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cat_bipps/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/8801853265996/" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/ar_bappy_/" title="X" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/md-asibur-rahman-13a38637a/" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ar-bappy-171/" title="Github" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col">
+          <h3 class="title">Leave a Message</h3>
+          <form class="form" id="contactForm" action="https://formspree.io/f/mzzaqakn" method="POST">
+            <div class="field">
+              <label for="name">Name<span>*</span></label>
+              <input id="name" name="name" type="text" required />
+              <span class="error-message">Name field is required</span>
+            </div>
+            <div class="field">
+              <label for="email">Email<span>*</span></label>
+              <input id="email" name="email" type="email" required />
+              <span class="error-message">Email field is required</span>
+            </div>
+            <div class="field">
+              <label for="subject">Subject<span>*</span></label>
+              <input type="text" name="subject" value="" id="subject" class="form-control" required />
+              <span class="error-message">Subject field is required</span>
+            </div>
+            <div class="field">
+              <label for="message">Message<span>*</span></label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error-message">Message field is required</span>
+            </div>
+            <button class="btn primary" type="submit">SEND MESSAGE</button>             
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer><div class="container">© <span id="year"></span> Asibur Rahman Bappy. All rights reserved.</div></footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+
+  <script>
+  // Theme toggle with localStorage
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const root = document.documentElement;
+
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  }
+
+  // On load, set theme from localStorage or system preference
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  })();
+
+  themeToggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+</script>
+</body>
+</html>
