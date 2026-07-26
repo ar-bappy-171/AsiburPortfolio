@@ -1338,30 +1338,33 @@ footer .container {
 }
 .skill-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px 14px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
   margin: 8px 0 0;
   padding: 0;
   list-style: none;
 }
 .skill-list li {
   position: relative;
-  padding-left: 16px;
+  padding-left: 18px;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 .skill-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 11px;
+  top: 9px;
   width: 8px;
   height: 8px;
   border-radius: 2px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   transform: rotate(45deg);
 }
-.bento-lg .skill-list { font-size: 15px; }
+.bento-lg .skill-list { font-size: 15px; gap: 10px; }
+.bento-lg .skill-list li { padding-left: 20px; }
+.bento-lg .skill-list li::before { top: 10px; width: 9px; height: 9px; }
 
 /* --- Item 14: Tech stack chips on project cards --- */
 .tech-badges {
