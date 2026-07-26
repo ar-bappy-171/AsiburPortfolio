@@ -14,8 +14,8 @@ export const profile = {
   ],
   profileBio:
     "I am a dedicated Electrical and Electronic Engineer with hands-on experience spanning VLSI design, embedded systems, digital circuit design, and automation. My work bridges hardware and software — from transistor-level IC design to microcontroller-based systems — with a strong focus on solving complex engineering challenges and optimizing designs for performance, efficiency, and reliability. I bring a collaborative, detail-oriented approach to multidisciplinary teams, translating research and theoretical concepts into practical, technologically sound solutions that meet real-world engineering standards.",
-  avatar: "/media/profile.jpg",
-  resume: "/media/Bappy_CV.pdf",
+  avatar: "/media/profile.png",
+  resume: "/media/Asibur_Rahman_Bappy_Resume.pdf",
   video: "/media/bg.mp4",
 };
 
