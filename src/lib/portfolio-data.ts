@@ -5,7 +5,7 @@
 export const profile = {
   name: "Asibur Rahman Bappy",
   eyebrowQuote: '"Knowledge is Power." — Francis Bacon',
-  lead: "I am passionate about pursuing opportunities that expand my expertise and drive professional excellence. With a curious, proactive mindset, I am committed to continuous growth and innovation in both personal and professional realms. I thrive in collaborative environments where I can contribute meaningfully, sharpen my skills, and make a tangible impact.",
+  lead: "Deeply committed to pursuing opportunities that broaden my expertise and foster professional excellence, I bring a curious and proactive disposition to continuous growth and innovation in both personal and professional endeavors. Collaborative environments allow me to contribute meaningfully, refine my capabilities, and deliver a tangible impact.",
   typingRoles: [
     "EEE Engineer",
     "VLSI Design Enthusiast",
@@ -13,7 +13,7 @@ export const profile = {
     "Electronics Researcher",
   ],
   profileBio:
-    "I am a dedicated Electrical and Electronic (EEE) Engineer with hands-on experience in VLSI design, embedded systems, digital circuits, and automation projects. I design and implement hardware and software solutions, from transistor-level circuits to microcontroller-based systems. I thrive on solving complex engineering problems, optimizing designs for performance and efficiency, and collaborating in multidisciplinary teams to deliver practical and innovative solutions. My work focuses on bringing research and practical applications together, ensuring projects are reliable, efficient, and aligned with modern technological standards.",
+    "I am a dedicated Electrical and Electronic Engineer with hands-on experience spanning VLSI design, embedded systems, digital circuit design, and automation. My work bridges hardware and software — from transistor-level IC design to microcontroller-based systems — with a strong focus on solving complex engineering challenges and optimizing designs for performance, efficiency, and reliability. I bring a collaborative, detail-oriented approach to multidisciplinary teams, translating research and theoretical concepts into practical, technologically sound solutions that meet real-world engineering standards.",
   avatar: "/media/profile.jpg",
   resume: "/media/Bappy_CV.pdf",
   video: "/media/bg.mp4",
@@ -68,6 +68,19 @@ export const experience: {
     ],
     [
       {
+        title: "HR Intern – Learning & Development, Prime Bank PLC, Head Office",
+        meta: "Duration: 01 Sep – 08 Sep 2025",
+        bullets: [
+          "Contributed ideas to develop and improve the official e-learning platform.",
+          "Supported training program organization and cross-department coordination.",
+          "Managed and analyzed employee training data and hiring documents.",
+          "Maintained documentation and training records for tracking and compliance.",
+          "Prepared reports and presentations for HR and training sessions.",
+        ],
+      },
+    ],
+    [
+      {
         title: "Science And Commerce Coaching Center, Mirpur, Dhaka",
         meta: "Promoted: Jan 2024 — Present",
         bullets: [
@@ -104,12 +117,12 @@ export const skills: CardItem[] = [
   {
     badge: "Software & EDA",
     bullets: [
-      "Cadence Virtuoso",
+      "Cadence Virtuoso, Cadence Innovus",
       "PSpice, Proteus, Quartus",
       "AutoCAD, FreeCAD",
       "Code::Blocks, MATLAB, Arduino",
       "PowerWorld Simulator (Student version)",
-      "CST Studio, Siemens",
+      "Microsoft Word, Excel, PowerPoint",
     ],
   },
   {
@@ -133,6 +146,7 @@ export const skills: CardItem[] = [
     badge: "Specialized Courses",
     bullets: [
       "VLSI 1, Fabrication and Processing",
+      "Digital Logic Design",
       "Electronics 1, Electronics 2",
       "Power System 1, Power System 2",
       "Digital Electronics, Digital Signal Processing",
@@ -143,6 +157,18 @@ export const skills: CardItem[] = [
 ];
 
 export const projects: CardItem[] = [
+  {
+    badge: "Training Management & Evaluation System – Prime Bank PLC",
+    bullets: [
+      "Developed a local Training Management & Evaluation System for Prime Bank PLC, featuring trainer evaluation reporting, yearly participant tracking, course management, and individual training progress monitoring.",
+    ],
+  },
+  {
+    badge: "Local Training Evaluation System – Prime Bank PLC",
+    bullets: [
+      "Designed and developed a local server-based system for Prime Bank PLC to generate, process, and manage trainer evaluation results efficiently.",
+    ],
+  },
   {
     badge: "Vibration Meter using IC LM3915",
     bullets: [
@@ -216,6 +242,20 @@ export const projects: CardItem[] = [
       "Designed for precise and comprehensive analysis of plasmonic behavior.",
     ],
   },
+  {
+    badge: "Fun Project - Movie Tracker App",
+    bullets: [
+      "Built a local web app to log, organize, and rate watched movies.",
+      "Enabled quick search and filtering to revisit favorite titles with ease.",
+    ],
+  },
+  {
+    badge: "Fun Project - Reference & Productivity Tools",
+    bullets: [
+      "Built a set of local tools including an actor info database, a prompt engineering vault for AI use cases, and a categorized collection of frequently used website links.",
+      "Designed each for quick lookup and easy expansion as new entries are added.",
+    ],
+  },
 ];
 
 export const education: TimelineItem[] = [
@@ -225,7 +265,7 @@ export const education: TimelineItem[] = [
     bullets: [
       "Conference: Design and Performance Analysis of a Highly Sensitive SPR Biosensor for Water Pollution Detection.",
       "Journal: Design and Numerical Analysis of a Highly Sensitive SPR Biosensor for Detecting Contaminants in Water.",
-      "CGPA: 3.20 out of 4.00",
+      "CGPA: 3.2 out of 4.00",
     ],
   },
   {
@@ -242,8 +282,13 @@ export const education: TimelineItem[] = [
 
 export const references: TimelineItem[] = [
   {
-    title: "Khandakar Md. Ishtiak",
-    meta: "Assistant Professor · Department of EEE, AUST",
+    title: "Umme Salma",
+    meta: "SVP & Head of L&D, Prime Bank PLC",
+    bullets: ["Email: salma.umme@primebank.com.bd"],
+  },
+  {
+    title: "Dr. Khandakar Md. Ishtiak",
+    meta: "Associate Professor · Department of EEE, AUST",
     bullets: ["Email: ishtiak.eee@aust.edu"],
   },
   {
@@ -263,6 +308,6 @@ export const contact = {
   phoneHref: "tel:+8801853265996",
   email: "asibur.eee.171@gmail.com",
   emailHref: "mailto:asibur.eee.171@gmail.com",
-  address: "House 409/11A, SP Road, South Paikpara, Kallyanpur, Dhaka, Bangladesh",
+  address: "House 409/21, SP Road, South Paikpara, Kallyanpur, Dhaka, Bangladesh",
   formAction: "https://formspree.io/f/mzzaqakn",
 };
