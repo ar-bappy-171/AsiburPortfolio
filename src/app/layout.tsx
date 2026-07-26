@@ -47,9 +47,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#070a12" />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
-        <link rel="icon" type="image/jpeg" href="/media/profile.jpg" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="antialiased">{children}</body>
