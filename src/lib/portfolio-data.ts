@@ -69,7 +69,7 @@ export const experience: {
     [
       {
         title: "HR Intern – Learning & Development, Prime Bank PLC, Head Office",
-        meta: "Duration: 01 Sep – 08 Sep 2025",
+        meta: "Duration: Feb 2026 – May 2026",
         bullets: [
           "Contributed ideas to develop and improve the official e-learning platform.",
           "Supported training program organization and cross-department coordination.",
