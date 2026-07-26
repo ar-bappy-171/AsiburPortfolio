@@ -5,11 +5,11 @@ import type { TimelineItem } from "@/lib/portfolio-data";
 
 function TimelineGroup({ items }: { items: TimelineItem[] }) {
   return (
-    <div className="timeline panel reveal">
+    <div className="timeline panel glass reveal">
       {items.map((item, i) => (
         <div className="tl-item" key={i}>
           <div className="tl-dot" aria-hidden="true" />
-          <div className="tl-card">
+          <div className="tl-card glass">
             <div className="tl-title">{item.title}</div>
             <div className="small">{item.meta}</div>
             <ul className="clean muted">
@@ -38,7 +38,7 @@ export function Experience() {
         ))}
 
         <div className="grid3">
-          <article className="card tilt reveal">
+          <article className="card tilt glass reveal">
             <div className="badge">{experience.competencies.badge}</div>
             <ul className="clean muted">
               {experience.competencies.bullets.map((b, i) => (

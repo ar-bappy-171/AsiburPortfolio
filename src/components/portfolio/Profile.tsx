@@ -7,7 +7,7 @@ export function Profile() {
         <h2 className="section-title reveal center" id="profile-heading">
           Profile
         </h2>
-        <div className="panel reveal">
+        <div className="panel glass reveal">
           <p className="muted">{profile.profileBio}</p>
         </div>
       </div>
