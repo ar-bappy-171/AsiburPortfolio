@@ -63,15 +63,17 @@ export function Hero() {
             </h2>
             <p className="lead">{profile.lead}</p>
             <div className="cta-row reveal">
-              <a className="btn" href={profile.resume} download>
+              <a className="btn magnetic" href={profile.resume} download>
                 <i className="fas fa-file-pdf" aria-hidden="true" /> Download Resume
               </a>
-              <a className="btn primary" href="#contact">
+              <a className="btn primary magnetic" href="#contact">
                 <i className="fa-regular fa-paper-plane" aria-hidden="true" /> Hire Me
               </a>
             </div>
           </div>
           <div className="hero-visual reveal" ref={visualRef}>
+            <div className="avatar-ring" aria-hidden="true" />
+            <div className="avatar-glow" aria-hidden="true" />
             <img
               className="avatar"
               src={profile.avatar}
@@ -82,6 +84,13 @@ export function Hero() {
             />
           </div>
         </div>
+
+        <a className="scroll-cue" href="#profile" aria-label="Scroll to profile">
+          <span className="scroll-cue-text">Scroll</span>
+          <span className="scroll-cue-mouse" aria-hidden="true">
+            <span className="scroll-cue-wheel" />
+          </span>
+        </a>
       </div>
     </header>
   );

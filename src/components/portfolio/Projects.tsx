@@ -73,13 +73,30 @@ function ProjectCard({ item }: { item: CardItem }) {
   }, []);
 
   return (
-    <article className="card tilt reveal" ref={ref}>
-      <div className="badge">{item.badge}</div>
+    <article className={`card tilt glass reveal ${item.featured ? "featured" : ""}`} ref={ref}>
+      {item.featured && (
+        <span className="featured-ribbon" aria-label="Featured project">
+          <i className="fas fa-star" aria-hidden="true" /> Featured
+        </span>
+      )}
+      <div className="badge">
+        <span className="badge-dot" aria-hidden="true" />
+        {item.badge}
+      </div>
       <ul className="clean muted">
         {item.bullets.map((b, i) => (
           <li key={i}>{b}</li>
         ))}
       </ul>
+      {item.techStack && item.techStack.length > 0 && (
+        <ul className="tech-badges" aria-label="Tech stack">
+          {item.techStack.map((t) => (
+            <li key={t} className="tech-chip">
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
     </article>
   );
 }

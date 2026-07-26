@@ -4,7 +4,7 @@ import { skills } from "@/lib/portfolio-data";
 import type { CardItem } from "@/lib/portfolio-data";
 import { useEffect, useRef } from "react";
 
-function SkillCard({ item }: { item: CardItem }) {
+function SkillCard({ item, index }: { item: CardItem; index: number }) {
   const ref = useRef<HTMLElement>(null);
 
   // 3D tilt on hover (desktop fine-pointer only).
@@ -74,10 +74,19 @@ function SkillCard({ item }: { item: CardItem }) {
     };
   }, []);
 
+  // Bento layout: first card spans 2 columns + 2 rows on desktop
+  const bentoClass = index === 0 ? "bento-lg" : index === 3 ? "bento-wide" : "";
+
   return (
-    <article className="card tilt reveal" ref={ref}>
-      <div className="badge">{item.badge}</div>
-      <ul className="clean muted">
+    <article
+      className={`card tilt glass reveal ${bentoClass}`}
+      ref={ref}
+    >
+      <div className="badge">
+        <span className="badge-dot" aria-hidden="true" />
+        {item.badge}
+      </div>
+      <ul className="clean muted skill-list">
         {item.bullets.map((b, i) => (
           <li key={i}>{b}</li>
         ))}
@@ -96,9 +105,9 @@ export function Skills() {
         <p className="section-sub reveal center">
           Design tools, programming, and platforms I work with.
         </p>
-        <div className="grid3">
+        <div className="bento-grid">
           {skills.map((s, i) => (
-            <SkillCard key={i} item={s} />
+            <SkillCard key={i} item={s} index={i} />
           ))}
         </div>
       </div>

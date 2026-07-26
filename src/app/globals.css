@@ -1075,6 +1075,393 @@ footer .container {
   pointer-events: none;
 }
 
+/* ============================================================
+   UPGRADES — bigger hero name, animated gradient text,
+   floating avatar + glow ring, scroll cue, stats row,
+   glassmorphism, bento grid, tech badges, magnetic buttons,
+   enhanced cursor glow.
+   ============================================================ */
+
+/* --- Item 1 + 2: Bigger name with animated gradient shimmer --- */
+.title .name {
+  font-size: clamp(44px, 9vw, 92px);
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  background: linear-gradient(
+    100deg,
+    var(--accent) 0%,
+    var(--accent-2) 30%,
+    #ff2cf1 55%,
+    var(--accent) 80%,
+    var(--accent-2) 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 8px 26px color-mix(in oklab, var(--accent), transparent 70%));
+  animation: nameShimmer 8s linear infinite;
+  word-break: break-word;
+}
+@keyframes nameShimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 250% 50%; }
+}
+@media (max-width: 600px) {
+  .title .name { letter-spacing: -0.8px; }
+}
+
+/* --- Item 3: Floating avatar with rotating conic glow ring --- */
+.hero-visual {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  animation: avatarFloat 6s ease-in-out infinite;
+}
+@keyframes avatarFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+.hero-visual:hover { transform: translateY(-4px) scale(1.01); }
+.hero-visual img.avatar {
+  position: absolute;
+  inset: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border: 3px solid color-mix(in oklab, var(--bg), white 6%);
+  filter: contrast(1.03) saturate(1.04);
+  z-index: 2;
+}
+.avatar-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 3px;
+  background: conic-gradient(
+    from 0deg,
+    var(--accent),
+    var(--accent-2),
+    #ff2cf1,
+    var(--accent-3),
+    var(--accent)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: ringSpin 8s linear infinite;
+  z-index: 1;
+}
+@keyframes ringSpin {
+  to { transform: rotate(360deg); }
+}
+.avatar-glow {
+  position: absolute;
+  inset: -20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in oklab, var(--accent), transparent 65%), transparent 60%);
+  filter: blur(24px);
+  opacity: 0.55;
+  z-index: 0;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50%      { opacity: 0.7;  transform: scale(1.05); }
+}
+@media (max-width: 940px) {
+  .hero-visual { max-width: 320px; }
+}
+
+/* --- Item 5: Scroll-down cue --- */
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 56px auto 0;
+  width: max-content;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  transition: opacity var(--dur-2) var(--ease), color var(--dur-2) var(--ease);
+}
+.scroll-cue:hover { opacity: 1; color: var(--accent); }
+.scroll-cue-mouse {
+  width: 22px;
+  height: 36px;
+  border: 2px solid color-mix(in oklab, var(--muted), transparent 30%);
+  border-radius: 12px;
+  position: relative;
+  display: inline-block;
+}
+.scroll-cue-wheel {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 2px;
+  transform: translateX(-50%);
+  animation: scrollWheel 1.6s ease-in-out infinite;
+}
+@keyframes scrollWheel {
+  0%   { opacity: 0; transform: translate(-50%, 0); }
+  40%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 12px); }
+}
+@media (max-width: 940px) {
+  .scroll-cue { display: none; }
+}
+
+/* --- Item 4: Stats row with count-up --- */
+.stats-row {
+  padding: 32px 0 8px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+@media (max-width: 880px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
+.stat-card {
+  position: relative;
+  text-align: center;
+  padding: 24px 18px 22px;
+  border-radius: var(--radius-lg);
+  background: color-mix(in oklab, var(--surface), transparent 8%);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: transform var(--dur-2) var(--ease), border-color var(--dur-2) var(--ease);
+}
+.stat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(140px 80px at 50% 0%, color-mix(in oklab, var(--accent), transparent 80%), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--dur-2) var(--ease);
+  pointer-events: none;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in oklab, var(--accent), transparent 55%);
+}
+.stat-card:hover::before { opacity: 1; }
+.stat-value {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.3px;
+}
+.stat-sublabel {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+  letter-spacing: 0.2px;
+}
+
+/* --- Item 6: Glassmorphism for cards --- */
+.card.glass,
+.panel.glass {
+  background: color-mix(in oklab, var(--surface), transparent 78%);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--accent), transparent 85%);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+[data-theme="light"] .card.glass,
+[data-theme="light"] .panel.glass {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(20, 110, 245, 0.18);
+  box-shadow:
+    0 8px 32px rgba(20, 30, 60, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* --- Item 7: Bento grid for Skills --- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(180px, auto);
+  gap: 22px;
+}
+.bento-grid .card { min-height: 180px; }
+.bento-lg {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.bento-wide {
+  grid-column: span 2;
+}
+@media (max-width: 940px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-lg { grid-column: span 2; grid-row: span 1; }
+  .bento-wide { grid-column: span 2; }
+}
+@media (max-width: 600px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-lg, .bento-wide { grid-column: span 1; }
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.skill-list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.skill-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  transform: rotate(45deg);
+}
+.bento-lg .skill-list { font-size: 15px; }
+
+/* --- Item 14: Tech stack chips on project cards --- */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 0;
+  list-style: none;
+}
+.tech-chip {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--accent), transparent 88%);
+  border: 1px solid color-mix(in oklab, var(--accent), transparent 70%);
+  color: color-mix(in oklab, var(--accent), var(--text) 30%);
+  letter-spacing: 0.3px;
+  transition: background var(--dur-1) var(--ease), transform var(--dur-1) var(--ease);
+}
+.tech-chip:hover {
+  background: color-mix(in oklab, var(--accent), transparent 78%);
+  transform: translateY(-1px);
+}
+
+/* --- Featured project ribbon --- */
+.card.featured {
+  border-color: color-mix(in oklab, var(--accent), transparent 60%);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.28),
+    0 0 0 1px color-mix(in oklab, var(--accent), transparent 75%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.featured-ribbon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #001018;
+  box-shadow: 0 4px 12px color-mix(in oklab, var(--accent), transparent 60%);
+}
+[data-theme="light"] .featured-ribbon { color: #fff; }
+.featured-ribbon i { font-size: 9px; }
+
+/* --- Badge dot accent (shared) --- */
+.badge-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 8px color-mix(in oklab, var(--accent), transparent 60%);
+}
+
+/* --- Item 17: Magnetic button transitions --- */
+.btn.magnetic {
+  transition: transform var(--dur-2) var(--ease-out), border-color var(--dur-1) var(--ease),
+    box-shadow var(--dur-1) var(--ease);
+  will-change: transform;
+}
+
+/* --- Item 20: Enhanced cursor-following glow on cards --- */
+.card.tilt::before,
+.panel.tilt::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    240px circle at var(--hx, 50%) var(--hy, 50%),
+    color-mix(in oklab, var(--accent), transparent 70%),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity var(--dur-2) var(--ease);
+}
+.card.tilt:hover::before,
+.panel.tilt:hover::before {
+  opacity: 1;
+}
+/* keep card content above the glow */
+.card.tilt > *,
+.panel.tilt > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -1095,5 +1482,12 @@ footer .container {
   }
   .bg-video video {
     filter: none;
+  }
+  .title .name,
+  .hero-visual,
+  .avatar-ring,
+  .avatar-glow,
+  .scroll-cue-wheel {
+    animation: none !important;
   }
 }
