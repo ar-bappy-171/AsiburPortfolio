@@ -97,12 +97,15 @@ A contact form (powered by Formspree) plus direct contact details — phone, ema
 |---|---|
 | 📞 Phone | +880 1853-265996 |
 | ✉️ Email | asibur.eee.171@gmail.com |
+| 📍 Location | Dhaka, Bangladesh |
 | Facebook | [md.bappi.397948](https://www.facebook.com/md.bappi.397948/) |
 | Instagram | [cat_bipps](https://www.instagram.com/cat_bipps/) |
 | WhatsApp | [+8801853265996](https://wa.me/8801853265996/) |
+| Discord | [night_owl_171](https://discord.com/users/night_owl_171) |
 | X (Twitter) | [ar_bappy_](https://x.com/ar_bappy_/) |
 | LinkedIn | [md-asibur-rahman](https://www.linkedin.com/in/md-asibur-rahman-13a38637a/) |
 | GitHub | [ar-bappy-171](https://github.com/ar-bappy-171/) |
+| ORCID | [0009-0006-9444-8982](https://orcid.org/0009-0006-9444-8982) |
 
 ---
 
