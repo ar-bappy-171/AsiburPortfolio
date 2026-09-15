@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Electrical & Electronic Engineer specializing in VLSI design, embedded systems, and digital circuits.",
     type: "website",
-    images: ["/media/profile.jpg"],
+    images: ["/media/profile.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -50,6 +50,9 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/logo.svg" />
+        <link rel="shortcut icon" href="/logo.svg" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="antialiased">{children}</body>

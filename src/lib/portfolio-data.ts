@@ -20,14 +20,14 @@ export const profile = {
 };
 
 export const socials = [
+  { label: "GitHub", href: "https://github.com/ar-bappy-171/", icon: "fab fa-github" },
+  { label: "ORCID", href: "https://orcid.org/0009-0006-9444-8982", icon: "fab fa-orcid" },
+  { label: "WhatsApp", href: "https://wa.me/8801853265996/", icon: "fab fa-whatsapp" },
   { label: "Facebook", href: "https://www.facebook.com/md.bappi.397948/", icon: "fab fa-facebook" },
   { label: "Instagram", href: "https://www.instagram.com/cat_bipps/", icon: "fab fa-instagram" },
-  { label: "WhatsApp", href: "https://wa.me/8801853265996/", icon: "fab fa-whatsapp" },
   { label: "Discord (night_owl_171)", href: "https://discord.com/users/night_owl_171", icon: "fab fa-discord" },
   { label: "X (Twitter)", href: "https://x.com/ar_bappy_/", icon: "fab fa-x-twitter" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/md-asibur-rahman-13a38637a/", icon: "fab fa-linkedin" },
-  { label: "GitHub", href: "https://github.com/ar-bappy-171/", icon: "fab fa-github" },
-  { label: "ORCID", href: "https://orcid.org/0009-0006-9444-8982", icon: "fab fa-orcid" },
 ];
 
 export const navLinks = [
