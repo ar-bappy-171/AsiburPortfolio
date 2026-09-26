@@ -4,10 +4,11 @@ import { useEffect, useRef, useState } from "react";
 
 /**
  * Animated count-up stat card.
- * Triggers when the stat scrolls into view.
+ * - When `value` is a number, it counts up from 0 when scrolled into view.
+ * - When `value` is a string, it just displays the text (no animation).
  */
 type Stat = {
-  value: number;
+  value: number | string;
   suffix?: string;
   prefix?: string;
   label: string;
@@ -16,16 +17,21 @@ type Stat = {
 
 function StatCard({ stat, delay }: { stat: Stat; delay: number }) {
   const ref = useRef<HTMLDivElement>(null);
+  const isNumeric = typeof stat.value === "number";
+  const numericValue = isNumeric ? (stat.value as number) : 0;
   const [display, setDisplay] = useState(0);
   const started = useRef(false);
 
   useEffect(() => {
+    // For string values, no animation needed
+    if (!isNumeric) return;
+
     const el = ref.current;
     if (!el) return;
 
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReduced) {
-      setDisplay(stat.value);
+      setDisplay(numericValue);
       started.current = true;
       return;
     }
@@ -41,9 +47,9 @@ function StatCard({ stat, delay }: { stat: Stat; delay: number }) {
               const t = Math.min(1, (now - start) / duration);
               // easeOutCubic
               const eased = 1 - Math.pow(1 - t, 3);
-              setDisplay(stat.value * eased);
+              setDisplay(numericValue * eased);
               if (t < 1) requestAnimationFrame(tick);
-              else setDisplay(stat.value);
+              else setDisplay(numericValue);
             };
             requestAnimationFrame(tick);
           }
@@ -54,10 +60,13 @@ function StatCard({ stat, delay }: { stat: Stat; delay: number }) {
 
     io.observe(el);
     return () => io.disconnect();
-  }, [stat.value]);
+  }, [isNumeric, numericValue]);
 
-  const formatted =
-    stat.value % 1 === 0 ? Math.round(display).toString() : display.toFixed(2);
+  const formatted = isNumeric
+    ? numericValue % 1 === 0
+      ? Math.round(display).toString()
+      : display.toFixed(2)
+    : (stat.value as string);
 
   return (
     <div className="stat-card reveal" ref={ref} style={{ transitionDelay: `${delay}ms` }}>
@@ -75,7 +84,8 @@ function StatCard({ stat, delay }: { stat: Stat; delay: number }) {
 const stats: Stat[] = [
   { value: 14, suffix: "+", label: "Projects", sublabel: "Hardware · Software · Research" },
   { value: 2, suffix: "nd / 13", label: "ULKASEMI Training", sublabel: "IC Mask Design · 2025" },
-  { value: 3.2, suffix: " / 4.00", label: "CGPA", sublabel: "BSc EEE · AUST" },
+  // { value: 3.4, suffix: " / 4.00", label: "CGPA", sublabel: "BSc EEE · AUST" },
+  { value: "PnR", suffix: " / ICPD", label: "UVTI", sublabel: "Oct 26 – Jan 27" },
   { value: 4, suffix: "", label: "Languages", sublabel: "Bangla · English · Deutsch · Japanese" },
 ];
 
