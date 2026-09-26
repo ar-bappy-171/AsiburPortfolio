@@ -116,6 +116,27 @@ export function Projects() {
             <ProjectCard key={i} item={p} />
           ))}
         </div>
+
+        <a
+          className="hobby-cta reveal magnetic"
+          href="https://arprojects.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View all hobby projects on a separate site"
+        >
+          <span className="hobby-cta-icon" aria-hidden="true">
+            <i className="fas fa-wrench" />
+          </span>
+          <span className="hobby-cta-text">
+            <span className="hobby-cta-title">Explore My Hobby Projects</span>
+            <span className="hobby-cta-sub">
+              A separate collection of personal builds, experiments, and fun side-projects — all in one place.
+            </span>
+          </span>
+          <span className="hobby-cta-arrow" aria-hidden="true">
+            <i className="fas fa-arrow-right-long" />
+          </span>
+        </a>
       </div>
     </section>
   );

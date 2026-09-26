@@ -1432,6 +1432,137 @@ footer .container {
   box-shadow: 0 0 8px color-mix(in oklab, var(--accent), transparent 60%);
 }
 
+/* --- Hobby projects CTA box (below project grid) --- */
+.hobby-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 36px;
+  padding: 22px 26px;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--text);
+  background:
+    linear-gradient(120deg,
+      color-mix(in oklab, var(--accent), transparent 88%),
+      color-mix(in oklab, var(--accent-2), transparent 88%) 50%,
+      color-mix(in oklab, #ff2cf1, transparent 90%)
+    );
+  border: 1px solid color-mix(in oklab, var(--accent), transparent 70%);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  box-shadow:
+    0 10px 32px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  transition: transform var(--dur-2) var(--ease-out),
+    border-color var(--dur-2) var(--ease),
+    box-shadow var(--dur-2) var(--ease);
+  will-change: transform;
+}
+/* Animated sheen that sweeps across on hover */
+.hobby-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    color-mix(in oklab, white, transparent 84%),
+    transparent
+  );
+  pointer-events: none;
+  transition: left 0.9s var(--ease);
+}
+.hobby-cta:hover {
+  border-color: color-mix(in oklab, var(--accent), transparent 40%);
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.34),
+    0 0 0 1px color-mix(in oklab, var(--accent), transparent 60%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+.hobby-cta:hover::before { left: 130%; }
+.hobby-cta:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+}
+
+.hobby-cta-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #001018;
+  font-size: 20px;
+  box-shadow: 0 6px 16px color-mix(in oklab, var(--accent), transparent 60%);
+}
+[data-theme="light"] .hobby-cta-icon { color: #fff; }
+
+.hobby-cta-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.hobby-cta-title {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+[data-theme="light"] .hobby-cta-title {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hobby-cta-sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.hobby-cta-arrow {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--surface), transparent 60%);
+  border: 1px solid color-mix(in oklab, var(--accent), transparent 60%);
+  color: var(--accent);
+  font-size: 14px;
+  transition: transform var(--dur-2) var(--ease-out),
+    background var(--dur-1) var(--ease);
+}
+.hobby-cta:hover .hobby-cta-arrow {
+  transform: translateX(4px);
+  background: color-mix(in oklab, var(--accent), transparent 75%);
+}
+
+@media (max-width: 640px) {
+  .hobby-cta {
+    flex-wrap: wrap;
+    padding: 18px 20px;
+    gap: 14px;
+  }
+  .hobby-cta-title { font-size: 15px; }
+  .hobby-cta-sub { font-size: 12px; }
+  .hobby-cta-icon { width: 42px; height: 42px; font-size: 17px; }
+}
+
 /* --- Item 17: Magnetic button transitions --- */
 .btn.magnetic {
   transition: transform var(--dur-2) var(--ease-out), border-color var(--dur-1) var(--ease),
