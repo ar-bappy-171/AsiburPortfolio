@@ -1,0 +1,61 @@
+{
+  "entries": [
+    {
+      "id": "ic-mask-design-training-ulkasemi",
+      "group": 0,
+      "title": "IC Mask Design Training — ULKASEMI",
+      "meta": "Duration: 01 Sep – 08 Sep 2025",
+      "bullets": [
+        "Gained hands-on experience with Cadence Virtuoso using 14nm technology for circuit layout design and verification.",
+        "Learned about advanced layers in short-channel technology and applied DRC and LVS checks for validation.",
+        "Achieved 2nd position out of 13 participants in the final assessment."
+      ]
+    },
+    {
+      "id": "hr-intern-learning-and-development-prime-bank-plc-head-office",
+      "group": 1,
+      "title": "HR Intern – Learning & Development, Prime Bank PLC, Head Office",
+      "meta": "Duration: Feb 2026 – May 2026",
+      "bullets": [
+        "Contributed ideas to develop and improve the official e-learning platform.",
+        "Supported training program organization and cross-department coordination.",
+        "Managed and analyzed employee training data and hiring documents.",
+        "Maintained documentation and training records for tracking and compliance.",
+        "Prepared reports and presentations for HR and training sessions."
+      ]
+    },
+    {
+      "id": "science-and-commerce-coaching-center-mirpur-dhaka-promoted",
+      "group": 2,
+      "title": "Science And Commerce Coaching Center, Mirpur, Dhaka",
+      "meta": "Promoted: Jan 2024 — Present",
+      "bullets": [
+        "Promoted to Senior Tutor, leading curriculum planning and advanced classes.",
+        "Mentor junior tutors and guide students to improve problem-solving skills.",
+        "Organize workshops and track student progress for academic success."
+      ]
+    },
+    {
+      "id": "science-and-commerce-coaching-center-mirpur-dhaka-joined",
+      "group": 2,
+      "title": "Science And Commerce Coaching Center, Mirpur, Dhaka",
+      "meta": "Joined: Oct 2021 – Dec 2023",
+      "bullets": [
+        "Teach Physics and Mathematics to HSC candidates.",
+        "Help students solve problems effectively and understand concepts deeply.",
+        "Prepare them for academic success and future challenges."
+      ]
+    }
+  ],
+  "competencies": {
+    "badge": "Core Competencies",
+    "bullets": [
+      "Analytical problem solving",
+      "Clear documentation and collaboration",
+      "Communication and teamwork skills",
+      "Problem solving and decision making",
+      "Multitasking and adaptability",
+      "Knowledge sharing and time management"
+    ]
+  }
+}

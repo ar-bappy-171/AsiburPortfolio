@@ -1,0 +1,199 @@
+[
+  {
+    "id": "training-management-and-evaluation-system-prime-bank-plc",
+    "title": "Training Management & Evaluation System – Prime Bank PLC",
+    "description": "",
+    "bullets": [
+      "Developed a local Training Management & Evaluation System for Prime Bank PLC, featuring trainer evaluation reporting, yearly participant tracking, course management, and individual training progress monitoring."
+    ],
+    "techStack": ["C#", ".NET", "SQL Server", "WinForms"],
+    "featured": true,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "local-training-evaluation-system-prime-bank-plc",
+    "title": "Local Training Evaluation System – Prime Bank PLC",
+    "description": "",
+    "bullets": [
+      "Designed and developed a local server-based system for Prime Bank PLC to generate, process, and manage trainer evaluation results efficiently."
+    ],
+    "techStack": ["C#", ".NET", "SQL Server", "HTML/CSS"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "vibration-meter-using-ic-lm3915",
+    "title": "Vibration Meter using IC LM3915",
+    "description": "",
+    "bullets": [
+      "Displays vibration strength on a 10-LED bar graph, lighting more LEDs as vibration increases.",
+      "Uses a sensor to convert vibrations into voltage signals for display."
+    ],
+    "techStack": ["LM3915", "Op-Amp", "PCB Design"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "app-design-project-using-matlab",
+    "title": "App Design Project using MATLAB",
+    "description": "",
+    "bullets": [
+      "Created interactive GUIs with MATLAB App Designer.",
+      "Combined visual components and MATLAB code for user-friendly applications."
+    ],
+    "techStack": ["MATLAB", "App Designer"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "wireless-rc-car-control-with-gps-tracker",
+    "title": "Wireless RC Car Control with GPS Tracker",
+    "description": "",
+    "bullets": [
+      "Remote control of an RC car via wireless signals.",
+      "Tracks location in real-time using GPS for monitoring mobility."
+    ],
+    "techStack": ["Arduino", "RF Module", "GPS Module", "C++"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "full-adder-using-mosfet-combinations",
+    "title": "Full Adder using MOSFET Combinations",
+    "description": "",
+    "bullets": [
+      "Implemented a full adder using different MOSFET transistor configurations.",
+      "Optimized power, delay, and area with various transistor-level logic styles."
+    ],
+    "techStack": ["Cadence Virtuoso", "CMOS", "SPICE"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "solar-energy-based-inverter-design",
+    "title": "Solar Energy-Based Inverter Design",
+    "description": "",
+    "bullets": [
+      "Converts DC from solar panels to AC electricity for appliances or grid use.",
+      "Ensures efficient and eco-friendly energy conversion."
+    ],
+    "techStack": ["Power Electronics", "Inverter", "MATLAB"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "10t-sram-cell-implementation-in-cadence",
+    "title": "10T SRAM Cell Implementation in Cadence",
+    "description": "",
+    "bullets": [
+      "Designed and simulated a 10-transistor SRAM cell using Cadence based on research papers.",
+      "Focused on improving memory stability and reducing power consumption."
+    ],
+    "techStack": ["Cadence Virtuoso", "SRAM", "DRC/LVS"],
+    "featured": true,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "microcontroller-controlled-adaptive-dc-charger",
+    "title": "Microcontroller-Controlled Adaptive DC Charger",
+    "description": "",
+    "bullets": [
+      "Used a microcontroller to regulate DC output for battery charging.",
+      "Adapted charging parameters for different battery types ensuring efficiency and safety."
+    ],
+    "techStack": ["PIC Microcontroller", "C", "PWM"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "traffic-light-automation-with-microcontroller",
+    "title": "Traffic Light Automation with Microcontroller",
+    "description": "",
+    "bullets": [
+      "Implemented traffic light control using a microcontroller with timers and sensors.",
+      "Sensors provide feedback to the microcontroller to manage traffic flow efficiently.",
+      "Traffic lights give proper signals based on real-time traffic conditions."
+    ],
+    "techStack": ["Arduino", "IR Sensor", "C++"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "smart-image-enhancement-and-wireless-transmission",
+    "title": "Smart Image Enhancement & Wireless Transmission",
+    "description": "",
+    "bullets": [
+      "Captured images from users and improved quality using noise reduction techniques.",
+      "Transmitted images wirelessly for real-time analysis and display.",
+      "Focused on research-driven enhancement to preserve details and reduce artifacts."
+    ],
+    "techStack": ["Python", "OpenCV", "Wireless"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "surface-plasmon-resonance-numerical-analysis",
+    "title": "Surface Plasmon Resonance Numerical Analysis",
+    "description": "",
+    "bullets": [
+      "Built code to generate essential SPR parameters using the Transfer Matrix Method (TMM).",
+      "Implemented Kretschmann configuration rules for accurate simulation.",
+      "Designed for precise and comprehensive analysis of plasmonic behavior."
+    ],
+    "techStack": ["MATLAB", "TMM", "Biosensor"],
+    "featured": true,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "fun-project-movie-tracker-app",
+    "title": "Fun Project - Movie Tracker App",
+    "description": "",
+    "bullets": [
+      "Built a local web app to log, organize, and rate watched movies.",
+      "Enabled quick search and filtering to revisit favorite titles with ease."
+    ],
+    "techStack": ["Next.js", "React", "SQLite"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "fun-project-reference-and-productivity-tools",
+    "title": "Fun Project - Reference & Productivity Tools",
+    "description": "",
+    "bullets": [
+      "Built a set of local tools including an actor info database, a prompt engineering vault for AI use cases, and a categorized collection of frequently used website links.",
+      "Designed each for quick lookup and easy expansion as new entries are added."
+    ],
+    "techStack": ["Next.js", "React", "Tailwind"],
+    "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "software-and-eda",
+    "badge": "Software & EDA",
+    "bullets": [
+      "Cadence Virtuoso, Cadence Innovus",
+      "PSpice, Proteus, Quartus",
+      "AutoCAD, FreeCAD",
+      "Code::Blocks, MATLAB, Arduino",
+      "PowerWorld Simulator (Student version)",
+      "Microsoft Word, Excel, PowerPoint",
+      "VS Code, Antigravity"
+    ],
+    "techStack": []
+  },
+  {
+    "id": "programming-and-os",
+    "badge": "Programming & OS",
+    "bullets": [
+      "C, C++, Python",
+      "MATLAB, Verilog, PLC basics",
+      "Windows, Linux (Bash)"
+    ],
+    "techStack": []
+  },
+  {
+    "id": "language-proficiency",
+    "badge": "Language Proficiency",
+    "bullets": [
+      "Bangla (native)",
+      "English (professional)",
+      "Deutsch (German) — A2",
+      "Japanese — A1"
+    ],
+    "techStack": []
+  },
+  {
+    "id": "specialized-courses",
+    "badge": "Specialized Courses",
+    "bullets": [
+      "VLSI 1, Fabrication and Processing",
+      "Digital Logic Design",
+      "Electronics 1, Electronics 2",
+      "Power System 1, Power System 2",
+      "Digital Electronics, Digital Signal Processing",
+      "Computer Architecture, Optoelectronics",
+      "Biomedical Engineering"
+    ],
+    "techStack": []
+  }
+]
