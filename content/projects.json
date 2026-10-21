@@ -253,21 +253,5 @@
     "githubUrl": "",
     "demoUrl": "",
     "imageUrl": ""
-  },
-  {
-    "id": "4fdccbb7-f4ef-4527-909c-13efe840f48e",
-    "title": "DRC & LVS",
-    "description": "",
-    "bullets": [
-      "Design all standard cell",
-      "8 cell height layout"
-    ],
-    "techStack": [
-      "Cadence Virtuoso"
-    ],
-    "featured": true,
-    "githubUrl": "",
-    "demoUrl": "",
-    "imageUrl": ""
   }
 ]
