@@ -262,6 +262,15 @@ export const projects: CardItem[] = [
     techStack: ["MATLAB", "TMM", "Biosensor"],
     featured: true,
   },
+   {
+      badge: "LVS & DRC",
+    bullets: [
+      "Scametic and Layout of every standard cell",
+      "Customize function implement",
+    ],
+    techStack: ["Cadence Virtuoso"],
+    featured: true,
+  },
   {
     badge: "Fun Project - Movie Tracker App",
     bullets: [
