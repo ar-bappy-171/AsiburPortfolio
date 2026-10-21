@@ -253,18 +253,5 @@
     "githubUrl": "",
     "demoUrl": "",
     "imageUrl": ""
-  },
-  {
-    "id": "8f5709a8-44fc-4ac9-ac51-53c2cbbb4432",
-    "title": "DRC & LVS",
-    "description": "",
-    "bullets": [],
-    "techStack": [
-      "Cadence Virtuoso"
-    ],
-    "featured": false,
-    "githubUrl": "",
-    "demoUrl": "",
-    "imageUrl": ""
   }
 ]
