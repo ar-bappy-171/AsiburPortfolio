@@ -259,11 +259,8 @@
     "title": "DRC & LVS",
     "description": "",
     "bullets": [
-      "hsdhsdhsdh",
-      "thth",
-      "hfgh",
-      "tghsdfthn",
-      "thrsth"
+      "Design all standard cell",
+      "8 cell height layout"
     ],
     "techStack": [
       "Cadence Virtuoso"
