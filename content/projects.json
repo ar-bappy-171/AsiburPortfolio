@@ -6,7 +6,12 @@
     "bullets": [
       "Developed a local Training Management & Evaluation System for Prime Bank PLC, featuring trainer evaluation reporting, yearly participant tracking, course management, and individual training progress monitoring."
     ],
-    "techStack": ["C#", ".NET", "SQL Server", "WinForms"],
+    "techStack": [
+      "C#",
+      ".NET",
+      "SQL Server",
+      "WinForms"
+    ],
     "featured": true,
     "githubUrl": "",
     "demoUrl": "",
@@ -19,7 +24,12 @@
     "bullets": [
       "Designed and developed a local server-based system for Prime Bank PLC to generate, process, and manage trainer evaluation results efficiently."
     ],
-    "techStack": ["C#", ".NET", "SQL Server", "HTML/CSS"],
+    "techStack": [
+      "C#",
+      ".NET",
+      "SQL Server",
+      "HTML/CSS"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -33,7 +43,11 @@
       "Displays vibration strength on a 10-LED bar graph, lighting more LEDs as vibration increases.",
       "Uses a sensor to convert vibrations into voltage signals for display."
     ],
-    "techStack": ["LM3915", "Op-Amp", "PCB Design"],
+    "techStack": [
+      "LM3915",
+      "Op-Amp",
+      "PCB Design"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -47,7 +61,10 @@
       "Created interactive GUIs with MATLAB App Designer.",
       "Combined visual components and MATLAB code for user-friendly applications."
     ],
-    "techStack": ["MATLAB", "App Designer"],
+    "techStack": [
+      "MATLAB",
+      "App Designer"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -61,7 +78,12 @@
       "Remote control of an RC car via wireless signals.",
       "Tracks location in real-time using GPS for monitoring mobility."
     ],
-    "techStack": ["Arduino", "RF Module", "GPS Module", "C++"],
+    "techStack": [
+      "Arduino",
+      "RF Module",
+      "GPS Module",
+      "C++"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -75,7 +97,11 @@
       "Implemented a full adder using different MOSFET transistor configurations.",
       "Optimized power, delay, and area with various transistor-level logic styles."
     ],
-    "techStack": ["Cadence Virtuoso", "CMOS", "SPICE"],
+    "techStack": [
+      "Cadence Virtuoso",
+      "CMOS",
+      "SPICE"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -89,7 +115,11 @@
       "Converts DC from solar panels to AC electricity for appliances or grid use.",
       "Ensures efficient and eco-friendly energy conversion."
     ],
-    "techStack": ["Power Electronics", "Inverter", "MATLAB"],
+    "techStack": [
+      "Power Electronics",
+      "Inverter",
+      "MATLAB"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -103,7 +133,11 @@
       "Designed and simulated a 10-transistor SRAM cell using Cadence based on research papers.",
       "Focused on improving memory stability and reducing power consumption."
     ],
-    "techStack": ["Cadence Virtuoso", "SRAM", "DRC/LVS"],
+    "techStack": [
+      "Cadence Virtuoso",
+      "SRAM",
+      "DRC/LVS"
+    ],
     "featured": true,
     "githubUrl": "",
     "demoUrl": "",
@@ -117,7 +151,11 @@
       "Used a microcontroller to regulate DC output for battery charging.",
       "Adapted charging parameters for different battery types ensuring efficiency and safety."
     ],
-    "techStack": ["PIC Microcontroller", "C", "PWM"],
+    "techStack": [
+      "PIC Microcontroller",
+      "C",
+      "PWM"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -132,7 +170,11 @@
       "Sensors provide feedback to the microcontroller to manage traffic flow efficiently.",
       "Traffic lights give proper signals based on real-time traffic conditions."
     ],
-    "techStack": ["Arduino", "IR Sensor", "C++"],
+    "techStack": [
+      "Arduino",
+      "IR Sensor",
+      "C++"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -147,7 +189,11 @@
       "Transmitted images wirelessly for real-time analysis and display.",
       "Focused on research-driven enhancement to preserve details and reduce artifacts."
     ],
-    "techStack": ["Python", "OpenCV", "Wireless"],
+    "techStack": [
+      "Python",
+      "OpenCV",
+      "Wireless"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -162,7 +208,11 @@
       "Implemented Kretschmann configuration rules for accurate simulation.",
       "Designed for precise and comprehensive analysis of plasmonic behavior."
     ],
-    "techStack": ["MATLAB", "TMM", "Biosensor"],
+    "techStack": [
+      "MATLAB",
+      "TMM",
+      "Biosensor"
+    ],
     "featured": true,
     "githubUrl": "",
     "demoUrl": "",
@@ -176,7 +226,11 @@
       "Built a local web app to log, organize, and rate watched movies.",
       "Enabled quick search and filtering to revisit favorite titles with ease."
     ],
-    "techStack": ["Next.js", "React", "SQLite"],
+    "techStack": [
+      "Next.js",
+      "React",
+      "SQLite"
+    ],
     "featured": false,
     "githubUrl": "",
     "demoUrl": "",
@@ -190,8 +244,25 @@
       "Built a set of local tools including an actor info database, a prompt engineering vault for AI use cases, and a categorized collection of frequently used website links.",
       "Designed each for quick lookup and easy expansion as new entries are added."
     ],
-    "techStack": ["Next.js", "React", "Tailwind"],
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind"
+    ],
     "featured": false,
+    "githubUrl": "",
+    "demoUrl": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "3367cf40-03b8-48a2-82aa-664a050df5a0",
+    "title": "DRC & LVS",
+    "description": "",
+    "bullets": [],
+    "techStack": [
+      "Cadence Virtuoso"
+    ],
+    "featured": true,
     "githubUrl": "",
     "demoUrl": "",
     "imageUrl": ""
