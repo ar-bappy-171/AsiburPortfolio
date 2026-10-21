@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
     "lib": [
       "dom",
       "dom.iterable",
