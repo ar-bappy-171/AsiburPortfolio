@@ -265,7 +265,7 @@
     "techStack": [
       "Cadence Virtuoso"
     ],
-    "featured": false,
+    "featured": true,
     "githubUrl": "",
     "demoUrl": "",
     "imageUrl": ""
