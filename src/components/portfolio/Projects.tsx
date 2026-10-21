@@ -72,9 +72,6 @@ function ProjectCard({ item }: { item: CardItem }) {
     };
   }, []);
 
-  const heading = item.title || item.badge || "";
-  const hasLinks = Boolean(item.githubUrl || item.demoUrl);
-
   return (
     <article className={`card tilt glass reveal ${item.featured ? "featured" : ""}`} ref={ref}>
       {item.featured && (
@@ -82,28 +79,10 @@ function ProjectCard({ item }: { item: CardItem }) {
           <i className="fas fa-star" aria-hidden="true" /> Featured
         </span>
       )}
-      {item.imageUrl && (
-        <div
-          className="project-thumb"
-          style={{ aspectRatio: "16 / 9", overflow: "hidden", borderRadius: "0.75rem", marginBottom: "0.75rem" }}
-        >
-          <img
-            src={item.imageUrl}
-            alt={heading}
-            loading="lazy"
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-          />
-        </div>
-      )}
       <div className="badge">
         <span className="badge-dot" aria-hidden="true" />
-        {heading}
+        {item.badge}
       </div>
-      {item.description && (
-        <p className="muted" style={{ marginTop: "0.25rem", marginBottom: "0.5rem" }}>
-          {item.description}
-        </p>
-      )}
       <ul className="clean muted">
         {item.bullets.map((b, i) => (
           <li key={i}>{b}</li>
@@ -117,53 +96,6 @@ function ProjectCard({ item }: { item: CardItem }) {
             </li>
           ))}
         </ul>
-      )}
-      {hasLinks && (
-        <div
-          className="project-links"
-          style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginTop: "0.75rem" }}
-        >
-          {item.githubUrl && (
-            <a
-              className="project-link"
-              href={item.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.35rem",
-                padding: "0.35rem 0.7rem",
-                borderRadius: "0.5rem",
-                fontSize: "0.85rem",
-                textDecoration: "none",
-              }}
-            >
-              <i className="fab fa-github" aria-hidden="true" />
-              GitHub
-            </a>
-          )}
-          {item.demoUrl && (
-            <a
-              className="project-link"
-              href={item.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.35rem",
-                padding: "0.35rem 0.7rem",
-                borderRadius: "0.5rem",
-                fontSize: "0.85rem",
-                textDecoration: "none",
-              }}
-            >
-              <i className="fas fa-external-link-alt" aria-hidden="true" />
-              Live Demo
-            </a>
-          )}
-        </div>
       )}
     </article>
   );
@@ -184,6 +116,27 @@ export function Projects() {
             <ProjectCard key={i} item={p} />
           ))}
         </div>
+
+        <a
+          className="hobby-cta reveal magnetic"
+          href="https://arprojects.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View all hobby projects on a separate site"
+        >
+          <span className="hobby-cta-icon" aria-hidden="true">
+            <i className="fas fa-wrench" />
+          </span>
+          <span className="hobby-cta-text">
+            <span className="hobby-cta-title">Explore My Hobby Projects</span>
+            <span className="hobby-cta-sub">
+              A separate collection of personal builds, experiments, and fun side-projects — all in one place.
+            </span>
+          </span>
+          <span className="hobby-cta-arrow" aria-hidden="true">
+            <i className="fas fa-arrow-right-long" />
+          </span>
+        </a>
       </div>
     </section>
   );
