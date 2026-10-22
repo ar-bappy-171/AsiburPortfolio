@@ -282,12 +282,11 @@ export const projects: CardItem[] = [
 
 export const education: TimelineItem[] = [
   {
-    title: "Ahsanullah University of Science & Technology (AUST) — 2024",
+    title: "Ahsanullah University of Science & Technology (AUST) — 2025",
     meta: "Bachelor of Science in Electrical & Electronic Engineering",
     bullets: [
       "Conference: Design and Performance Analysis of a Highly Sensitive SPR Biosensor for Water Pollution Detection.",
       "Journal: Design and Numerical Analysis of a Highly Sensitive SPR Biosensor for Detecting Contaminants in Water.",
-      "CGPA: 3.2 out of 4.00",
     ],
   },
   {
